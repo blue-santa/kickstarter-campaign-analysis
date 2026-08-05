@@ -2,3 +2,5 @@
 *.swp
 .~lock.*
 **/.ipynb_checkpoints/
+/raw-data/Kickstarter_2026-07-24T08_26_14_228Z.json
+/raw-data/kickstarter_data_full.csv
