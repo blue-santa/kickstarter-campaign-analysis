@@ -64,9 +64,9 @@ The resulting limited dataset was exported to a parquet file for the next stage.
 
 # Exploratory Data Analysis
 
-After importing the new parquet file into the new jupyter notebook, the first visualization the project performed was a simple word cloud on the project descriptions.
-
 ![Common Words in Kickstarter Project Descriptions](02-00-data-vis-wordcloud.png)
+
+After importing the new parquet file into the new jupyter notebook, the first visualization the project performed was a simple word cloud on the project descriptions.
 
 Notable words from the Kickstarter project descriptions include:
 
@@ -80,11 +80,11 @@ Notable words from the Kickstarter project descriptions include:
 - music
 - one
 
+![Goal Amount vs. Pledge Amount](02-01-goal-vs-pledge-comparison.png)
+
 The next visualization was a comparison between campaign goals versus their pledged amounts. 
 
 Successful campaigns are in blue and failed campaigns are in green.
-
-![Goal Amount vs. Pledge Amount](02-01-goal-vs-pledge-comparison.png)
 
 While exploring this visualization and the tailing data points, one project that stood out was the Mystery Science Theater 3000 campaign. This indie film project had goal of only `$2M` and a pledged amount of `$6.5M`. 
 
@@ -95,59 +95,57 @@ On the other end, an overly ambitious project was `Silver Screen Video`. This in
 [Silver Screen Video](https://www.kickstarter.com/projects/silverscreenvideo/silver-screen-video)
 
 
-The following visualization shows the number of campaigns run in each country. `US` is the most popular country for Kickstarter, followed by `GB` and `CA`.
-
 ![Campaign Count by Country](02-02-campaign-count-by-country.png)
  
-As an experiment, the project explored Kickstarter popularity and financial outcomes among countries that do not use `USD`. Notably, `HK` (Hong Kong) has highly popular Kickstarter campaign, with a level of committed financial support that greatly surpassed other countries.
+The `Campaign Count by Country` visualization shows the number of campaigns run in each country. `US` is the most popular country for Kickstarter, followed by `GB` and `CA`.
 
 ![Mean Non-USD Pledged Amount by Country - Excluding USD-based Countries](02-03-mean-usd-pledged-amount-by-country-excluding-us.png)
 
-Focusing on Hong Kong, the most frequent outcome for a successful Kickstater campaign was between `$10000` and `$25000` (converted to `USD`).
+As an experiment, the project explored Kickstarter popularity and financial outcomes among countries that do not use `USD`. Notably, `HK` (Hong Kong) has highly popular Kickstarter campaign, with a level of committed financial support that greatly surpassed other countries.
 
 ![Pledged Amounts in Hong Kong](02-04-pledged-amounts-in-hong-kong.png)
 
-The project also explored average Kickstarter campaign pledged amounts over time. An important note here is that this dataset is limited only to this slice of the Web Robots archive. Therefore, this visualization is likely subject to selection bias.
+Focusing on Hong Kong, the most frequent outcome for a successful Kickstater campaign was between `$10000` and `$25000` (converted to `USD`).
 
 ![Average Pledge Amounts Per Project (Converted to $USD)](02-05-avg-pledge-amounts-per-project.png)
 
-According to the above visualization, Kickstarter had a peak of high average pledge amounts among successful campaigns in the year `2013`, with average pledge amounts at `~$25K`. According to this selective dataset, which may include bias, Kickstarter is currently having a resurgence in popularity with average pledge amounts reaching approximately `$32.5K`.
+The project also explored average Kickstarter campaign pledged amounts over time. An important note here is that this dataset is limited only to this slice of the Web Robots archive. Therefore, this visualization is likely subject to selection bias.
 
-In another exploration, the project viewed aggregate pledge amounts over time.
+According to the above visualization, Kickstarter had a peak of high average pledge amounts among successful campaigns in the year `2013`, with average pledge amounts at `~$25K`. According to this selective dataset, which may include bias, Kickstarter is currently having a resurgence in popularity with average pledge amounts reaching approximately `$32.5K`.
 
 ![Aggregate Pledge Amounts Over Time](02-06-agg-pledge-amounts.png)
 
-This demonstrates overall audience pledge willingness, but doesn't represent transferred funds because it includes `failed` campaigns.
+In another exploration, the project viewed aggregate pledge amounts over time.
 
-Limiting to `successful` campaigns provides the following result.
+This demonstrates overall audience pledge willingness, but doesn't represent transferred funds because it includes `failed` campaigns.
 
 ![Aggregate Pledge Amounts Over Time (Successful Campaigns)](02-07-aggregate-pledge-amounts-successful-campaigns.png)
 
+Limiting to `successful` campaigns provides the above result.
+
 As shown in the above graph, Kickstarter has become exponentially more popular since `2024`, with peak activity of transferred funds per year sitting just below `$350M USD`.
-
-Another curiosity to explore is the ratio of successful campaigns to unsuccessful campaigns. The following visualization may provide insight, however, the factor of selection bias may make this visualization misleading. (If the current dataset excludes historical failed campaigns more frequently in early Kickstarter years compared to current years, the visualization may show a higher level of historical successes than accuracy would require.) 
-
 
 ![Percent of Campaigns That Are Successful (Accuracy May Be Limited)](02-08-percent-campaigns-successful.png)
 
-Another interesting insight was that campaigns that receive a `Staff Pick` designation are almost always successful. A small-business owner that receives this lucky support from the Kickstarter team themselves are likely to have a positive outcome.
+Another curiosity to explore is the ratio of successful campaigns to unsuccessful campaigns. The following visualization may provide insight, however, the factor of selection bias may make this visualization misleading. (If the current dataset excludes historical failed campaigns more frequently in early Kickstarter years compared to current years, the visualization may show a higher level of historical successes than accuracy would require.) 
 
 ![Percent of Staff Pick Campaigns That Are Successful](02-09-percent-successful-staff-picks-only.png)
 
-In the following visualization, the graph shows that most campaigns actually have fewer than `5000` backers. Higher numbers of backers are typically found only in extremely popular campaigns that raise more than `$1M`, with a significant peak between `$5M` and `$10M`. Surprisngly, the highest grossing campaigns (`$10M <`) have not quite as many backers on average compared to those in the next lowest bracket. This suggests that the highest grossing campaigns likely have wealthy donors that contribute prodiguous sums.
-
+Another interesting insight was that campaigns that receive a `Staff Pick` designation are almost always successful. A small-business owner that receives this lucky support from the Kickstarter team themselves are likely to have a positive outcome.
 
 ![Avg Backers vs. Pledge Size](02-10-backer-count-vs-pledge-amt.png)
 
-A fascinating insight was found by searching to see which countries have the highest overachieving project. In other words, which countries overshoot the goal amounts by the highest percentage? The answer is `Tz`, which stands for `Tanzania`.
-
+In the above visualization, the graph shows that most campaigns actually have fewer than `5000` backers. Higher numbers of backers are typically found only in extremely popular campaigns that raise more than `$1M`, with a significant peak between `$5M` and `$10M`. Surprisngly, the highest grossing campaigns (`$10M <`) have not quite as many backers on average compared to those in the next lowest bracket. This suggests that the highest grossing campaigns likely have wealthy donors that contribute prodiguous sums.
 
 ![Percent Funded by Country](02-12-avg-prct-funded-by-country.png)
 
-A final observation is the amount pledged by category. The category of `Technology` was the winner by far, with `Games` and `Film & Video` trailing far behind.
-
+A fascinating insight was found by searching to see which countries have the highest overachieving project. In other words, which countries overshoot the goal amounts by the highest percentage? The answer is `Tz`, which stands for `Tanzania`.
 
 ![Amount Pledge by Category](02-13-total-amount-pledged-by-category.png)
+
+A final observation is the amount pledged by category. The category of `Technology` was the winner by far, with `Games` and `Film & Video` trailing far behind.
+
+## Actionable Insights
 
 A few actionable insights from this exploratory data analysis are summarized below:
 
@@ -176,17 +174,15 @@ The first model experiment was Logistic Regression.
   - The model primarily focuses on the features discussed above, including backer count, goal amount, category, and so forth
   - The model has a respectable accuracy score of `0.92`
 
-Using a function provided by the Springboard module for Logistic Regression, the project created a visualization for the Logistic Regression model's decision boundary.
-
 ![Logistic Regression Decision Boundary](04-00-goal-amount-vs-backer-count-dec-boundary.png)
+
+Using a function provided by the Springboard module for Logistic Regression, the project created a visualization for the Logistic Regression model's decision boundary.
 
 Note that the failed projects (in blue) have higher goal amounts than the successful projects (in red). A simple insight from this visualization can be that projects that fail often have overly ambitious goals.
 
-
-To visualization the Logistic Regression model's accuracy, the project created a confusion matrix.
-
-
 ![Logistic Regression Confusion Matrix](04-01-log-reg-confusion-matrix.png)
+
+To visualize the Logistic Regression model's accuracy, the project created a confusion matrix.
 
 ## Decision Trees
 
@@ -202,9 +198,9 @@ As a final model exploration, the project reviewed the predictive capacity of th
 
 With `~86000` rows in the final dataset, there were a significant number of clusters to gatherin into groups.
 
-The project first used the inertia-elbow method to decide on the appropriate number of clusters.
-
 ![Inertia-Elbow Method](04-02-clusters-vs-inertia-elbow.png)
+
+The project first used the inertia-elbow method to decide on the appropriate number of clusters.
 
 Using this method, the decided appropriate number of clusters is `2500`.
 
