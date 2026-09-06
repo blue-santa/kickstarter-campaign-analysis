@@ -178,7 +178,7 @@ The first model experiment was Logistic Regression.
 
 Using a function provided by the Springboard module for Logistic Regression, the project created a visualization for the Logistic Regression model's decision boundary.
 
-![Logistic Regression Decision Boundary](./stage-04-visualization/04-00-goal-amount-vs-backer-count-dec-boundary.png)
+![Logistic Regression Decision Boundary](04-00-goal-amount-vs-backer-count-dec-boundary.png)
 
 Note that the failed projects (in blue) have higher goal amounts than the successful projects (in red). A simple insight from this visualization can be that projects that fail often have overly ambitious goals.
 
@@ -186,7 +186,7 @@ Note that the failed projects (in blue) have higher goal amounts than the succes
 To visualization the Logistic Regression model's accuracy, the project created a confusion matrix.
 
 
-![Logistic Regression Confusion Matrix](./stage-04-visualization/04-01-log-reg-confusion-matrix.png)
+![Logistic Regression Confusion Matrix](04-01-log-reg-confusion-matrix.png)
 
 ## Decision Trees
 
@@ -204,13 +204,13 @@ With `~86000` rows in the final dataset, there were a significant number of clus
 
 The project first used the inertia-elbow method to decide on the appropriate number of clusters.
 
-![Inertia-Elbow Method](./stage-04-visualization/04-02-clusters-vs-inertia-elbow.png)
+![Inertia-Elbow Method](04-02-clusters-vs-inertia-elbow.png)
 
 Using this method, the decided appropriate number of clusters is `2500`.
 
 As an additional hyperparameter, the initialization for KMeans cluster uses the `k-means++` parameter, which encourages starting points for clusters to be spread out.
 
-![Kickstarter Goal Amount vs Backer Count w/KMeans Centroid Overlay](./stage-04-visualization/04-03-goal-vs-backers-kmeans.png)
+![Kickstarter Goal Amount vs Backer Count w/KMeans Centroid Overlay](04-03-goal-vs-backers-kmeans.png)
 
 At a glance, the cluster centroids seem to accurately capture the clustering of the data. 
 
