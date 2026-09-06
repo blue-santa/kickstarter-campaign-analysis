@@ -25,4 +25,4 @@ img {
 """
 
 pdf.add_section(Section(md_content), user_css=css)
-pdf.save("output.pdf")
+pdf.save("capstone-three-report.pdf")
