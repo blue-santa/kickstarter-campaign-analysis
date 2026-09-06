@@ -62,9 +62,9 @@ The project dropped rows with duplicate and null values, and also all rows where
 
 The resulting limited dataset was exported to a parquet file for the next stage.
 
-# Exploratory Data Analysis
-
 ![Common Words in Kickstarter Project Descriptions](02-00-data-vis-wordcloud.png)
+
+# Exploratory Data Analysis
 
 After importing the new parquet file into the new jupyter notebook, the first visualization the project performed was a simple word cloud on the project descriptions.
 
@@ -135,11 +135,11 @@ Another interesting insight was that campaigns that receive a `Staff Pick` desig
 
 ![Avg Backers vs. Pledge Size](02-10-backer-count-vs-pledge-amt.png)
 
-In the above visualization, the graph shows that most campaigns actually have fewer than `5000` backers. Higher numbers of backers are typically found only in extremely popular campaigns that raise more than `$1M`, with a significant peak between `$5M` and `$10M`. Surprisngly, the highest grossing campaigns (`$10M <`) have not quite as many backers on average compared to those in the next lowest bracket. This suggests that the highest grossing campaigns likely have wealthy donors that contribute prodiguous sums.
+In the above visualization, the graph shows that most campaigns actually have fewer than `5000` backers. Higher numbers of backers are typically found only in extremely popular campaigns that raise more than `$1M`, with a significant peak between `$5M` and `$10M`. Surprisngly, the highest grossing campaigns (`$10M <`) have not quite as many backers on average compared to those in the next lowest bracket. This suggests that the highest grossing campaigns likely have wealthy donors that contribute prodigious sums.
 
 ![Percent Funded by Country](02-12-avg-prct-funded-by-country.png)
 
-A fascinating insight was found by searching to see which countries have the highest overachieving project. In other words, which countries overshoot the goal amounts by the highest percentage? The answer is `Tz`, which stands for `Tanzania`.
+A fascinating insight was found by searching to see which countries have the highest overachieving projects. In other words, which countries overshoot the goal amounts by the highest percentage? The answer is `TZ`, which stands for `Tanzania`.
 
 ![Amount Pledge by Category](02-13-total-amount-pledged-by-category.png)
 
@@ -154,7 +154,7 @@ A few actionable insights from this exploratory data analysis are summarized bel
   - To get to considerable sums of `$25000` to `$50000`, expect to have at least `350` donors or more
 - `Technology`, `Games`, `Film & Video`, and `Music` bring in higher sums
 - Other categories seem to struggle more to gain pledges
-- If you live in Hong Kong or Tanzania, you might find that your market is better off than the US
+- If you live in Hong Kong or Tanzania, you might find that your market is better off
 
 # Pre-processing, Training, and Modeling
 
@@ -196,7 +196,7 @@ While this model does appear to be useful, it is less competitive.
 
 As a final model exploration, the project reviewed the predictive capacity of the KMeans Clustering model.
 
-With `~86000` rows in the final dataset, there were a significant number of clusters to gatherin into groups.
+With `~86000` rows in the final dataset, there were a significant number of clusters to gather into groups.
 
 ![Inertia-Elbow Method](04-02-clusters-vs-inertia-elbow.png)
 
@@ -229,11 +229,11 @@ One of these clusters is the following project -- a comic series that had a succ
 
 [The Center of Somewhere - Vol. 1 Small Town Heroes](https://www.kickstarter.com/projects/eightgunshots/the-center-of-somewhere-vol-1-small-town-heroes)
 
-This shows that other comics, of a similar nature, have a history of meeting their goals. In this instance, the goal amount was `$2000` and the pledge outcome was `2126`.
+This shows that other comics, of a similar nature, have a history of meeting their goals. In this instance, the goal amount was `$2000` and the pledge outcome was `$2126`.
 
 # Conclusion
 
-Overall, this project has been a success. The initial goal was to use publicly available Kickstarter datasets, data analysis methods, and predictive modeling to create a research methodology that a small-business owner can use during the research and development stage of a proposed project.
+Overall, this project was a success. The initial goal was to use publicly available Kickstarter datasets, data-analysis methods, and predictive modeling to create a research methodology that a small-business owner can use during the research and development stage of a proposed project.
 
 As shown in the final steps of this project, a small-business comic-book creator could use this data to ascertain whether or not they have the support necessary to obtain a desirable outcome.
 
@@ -241,4 +241,4 @@ The Logistic Regression model was particularly useful, with an accuracy score of
 
 The KMeans Clustering method revealed a promising method for categorizing Kickstarter campaigns and matching a candidate's campaign proposal to historical campaigns with similar aspects. This process could have great value in the research and development stage.
 
-A next step for this project to consider at a later date would be to use network analysis and visualization to create a visual web of Kickstarter campaigns and their relationship to each other and common attributes. As this idea extends far outside of the methods and education of the Springboard Academy curriculu, this idea is set aside for future explorations.
+A next step for this project to consider at a later date would be to use network analysis and visualization to create a visual web of Kickstarter campaigns and their relationship to each other and common attributes. As this idea extends far outside of the methods and education of the Springboard Academy curriculum, this idea is set aside for future explorations.
