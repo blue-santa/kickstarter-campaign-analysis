@@ -135,7 +135,7 @@ Another interesting insight was that campaigns that receive a `Staff Pick` desig
 
 ![Avg Backers vs. Pledge Size](02-10-backer-count-vs-pledge-amt.png)
 
-In the above visualization, the graph shows that most campaigns actually have fewer than `5000` backers. Higher numbers of backers are typically found only in extremely popular campaigns that raise more than `$1M`, with a significant peak between `$5M` and `$10M`. Surprisngly, the highest grossing campaigns (`$10M <`) have not quite as many backers on average compared to those in the next lowest bracket. This suggests that the highest grossing campaigns likely have wealthy donors that contribute prodigious sums.
+In the above visualization, the graph shows that most campaigns actually have fewer than `5000` backers. Higher numbers of backers are typically found only in extremely popular campaigns that raise more than `$1M`, with a significant peak between `$5M` and `$10M`. Surprisingly, the highest grossing campaigns (`$10M <`) have not quite as many backers on average compared to those in the next lowest bracket. This suggests that the highest grossing campaigns likely have wealthy donors that contribute prodigious sums.
 
 ![Percent Funded by Country](02-12-avg-prct-funded-by-country.png)
 
