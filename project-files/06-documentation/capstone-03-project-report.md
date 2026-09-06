@@ -68,7 +68,7 @@ After importing the new parquet file into the new jupyter notebook, the first vi
 
 ![Common Words in Kickstarter Project Descriptions](02-00-data-vis-wordcloud.png)
 
-Notable words from the Kicstarter project descriptions include:
+Notable words from the Kickstarter project descriptions include:
 
 - help
 - new
@@ -108,6 +108,11 @@ Focusing on Hong Kong, the most frequent outcome for a successful Kickstater cam
 ![Pledged Amounts in Hong Kong](02-04-pledged-amounts-in-hong-kong.png)
 
 The project also explored average Kickstarter campaign pledged amounts over time. An important note here is that this dataset is limited only to this slice of the Web Robots archive. Therefore, this visualization is likely subject to selection bias.
+
+<!-- Force it to scale relative to the printable page width -->
+<img src="02-05-avg-pledge-amounts-per-project.png" style="width: 100%; max-height: none;">
+
+Test
 
 ![Average Pledge Amounts Per Project (Converted to $USD)](02-05-avg-pledge-amounts-per-project.png)
 
