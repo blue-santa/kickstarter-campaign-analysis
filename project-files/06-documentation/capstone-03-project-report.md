@@ -109,11 +109,6 @@ Focusing on Hong Kong, the most frequent outcome for a successful Kickstater cam
 
 The project also explored average Kickstarter campaign pledged amounts over time. An important note here is that this dataset is limited only to this slice of the Web Robots archive. Therefore, this visualization is likely subject to selection bias.
 
-<!-- Force it to scale relative to the printable page width -->
-<img src="02-05-avg-pledge-amounts-per-project.png" style="width: 100%; max-height: none;">
-
-Test
-
 ![Average Pledge Amounts Per Project (Converted to $USD)](02-05-avg-pledge-amounts-per-project.png)
 
 According to the above visualization, Kickstarter had a peak of high average pledge amounts among successful campaigns in the year `2013`, with average pledge amounts at `~$25K`. According to this selective dataset, which may include bias, Kickstarter is currently having a resurgence in popularity with average pledge amounts reaching approximately `$32.5K`.
